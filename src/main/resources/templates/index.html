@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contas</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<h1>Rotas</h1>
+
+<code>
+POST http://127.0.0.1:8080/contas/
+content-type: application/json
+{
+  "nome" : "Energia",
+  "dataVencimento": "05/02/2019",
+  "dataPagamento": "09/02/2019",
+  "valorOriginal": 335.55
+}
+</code>
+
+<br/>
+
+<code>
+GET http://127.0.0.1:8080/contas/
+content-type: application/json
+</code>
+
+</body>
+</html>
